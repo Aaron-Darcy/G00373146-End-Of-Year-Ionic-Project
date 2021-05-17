@@ -1,0 +1,180 @@
+<! -- County Select Page -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>countyselect</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-back-button></ion-back-button>
+<ion-content>
+  <ion-list>
+    <ion-label>My County of residence is {{countyStatus}}</ion-label>
+    <ion-radio-group [(ngModel)]="countyStatus">
+      <ion-list-header>
+        <ion-label>
+          Select County of Residence
+        </ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Antrim</ion-label>
+        <ion-radio value="Antrim"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Armagh</ion-label>
+        <ion-radio value="Armagh"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Carlow</ion-label>
+        <ion-radio value="Carlow"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Cavan</ion-label>
+        <ion-radio value="Cavan"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Clare</ion-label>
+        <ion-radio value="Clare"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cork</ion-label>
+        <ion-radio value="Cork"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Derry</ion-label>
+        <ion-radio value="Derry"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Donegal</ion-label>
+        <ion-radio value="Donegal"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Down</ion-label>
+        <ion-radio value="Down"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Dublin</ion-label>
+        <ion-radio value="Dublin"></ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Fermanagh</ion-label>
+        <ion-radio value="Fermanagh"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Galway</ion-label>
+        <ion-radio value="Galway"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Kerry</ion-label>
+        <ion-radio value="Kerry"></ion-radio>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Kildare</ion-label>
+        <ion-radio value="Kildare"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Kilkenny</ion-label>
+        <ion-radio value="Kilkenny"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Laois</ion-label>
+        <ion-radio value="Laois"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Leitrim</ion-label>
+        <ion-radio value="Leitrim"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Limerick</ion-label>
+        <ion-radio value="Limerick"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Longford</ion-label>
+        <ion-radio value="Longford"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Louth</ion-label>
+        <ion-radio value="Louth"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mayo</ion-label>
+        <ion-radio value="Mayo"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Meath</ion-label>
+        <ion-radio value="Meath"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Monaghan</ion-label>
+        <ion-radio value="Monaghan"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Offaly</ion-label>
+        <ion-radio value="Offaly"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Roscommon</ion-label>
+        <ion-radio value="Roscommon"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Sligo</ion-label>
+        <ion-radio value="Sligo"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tipperary</ion-label>
+        <ion-radio value="Tipperary"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tyrone</ion-label>
+        <ion-radio value="Tyrone"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Waterford</ion-label>
+        <ion-radio value="Waterford"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Westmeath</ion-label>
+        <ion-radio value="Westmeath"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Wexford</ion-label>
+        <ion-radio value="Wexford"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Wicklow</ion-label>
+        <ion-radio value="Wicklow"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="updateCounty()">Update County</ion-button>
+</ion-content>

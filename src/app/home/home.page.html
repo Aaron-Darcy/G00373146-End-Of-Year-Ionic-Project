@@ -1,0 +1,29 @@
+<! -- Home page -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Provinces of Ireland
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h2>Click to see Counties</h2>
+  <ul>
+    <li [routerLink]="['/ulster']" routerDirection="forward">Ulster</li>
+    <li [routerLink]="['/munster']" routerDirection="forward">Munster</li>
+    <li [routerLink]="['/connaught']" routerDirection="forward">Connaught</li>
+    <li [routerLink]="['/leinster']" routerDirection="forward">Leinster</li>
+    <br>
+
+    <ion-button (click)="GPS()">GPS</ion-button>
+    <ion-button [routerLink]="['/countyselect']">Set County</ion-button>
+    <br>
+    {{lat}},{{long}}
+  </ul>
+</ion-content>
